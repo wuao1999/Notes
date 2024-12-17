@@ -3,4 +3,5 @@ markdown: kramdown
 remote_theme: daattali/beautiful-jekyll@6.0.1
 kramdown:
   math_engine: mathjax
-  parse_block_html: true
+parse_block_html: true
+mathjax: true
