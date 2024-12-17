@@ -116,3 +116,5 @@ Now we come into conclusion to the so-called ==Norther theorem==, which claims t
 <center>Rotational symmetry -> Angular momentum conservation</center>
 
 <center>U(1) gauge symmetry -> Electric charge conservation</center>
+
+In later we will see how to construct the energy and momentum directly from the Lagrangian model of different kind of fields.
