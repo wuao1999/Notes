@@ -33,7 +33,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: docs
+        working-directory: /home/runner/work/Notes/docs
     steps:
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
