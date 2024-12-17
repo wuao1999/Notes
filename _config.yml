@@ -1,5 +1,6 @@
 title: Welcome to my notes
 markdown: kramdown
+remote_theme: daattali/beautiful-jekyll@6.0.1
 kramdown:
   math_engine: mathjax
   parse_block_html: true
