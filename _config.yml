@@ -1,7 +1,10 @@
-remote_theme: just-the-docs/just-the-docs
-plugins:
-  - jekyll-remote-theme
 title: Welcome to my notes
+theme: just-the-docs
+url: https://wuao1999.github.io/Notes
+plugins:
+  - jekyll-default-layout
+aux_links: # remove if you don't want this link to appear on your pages
+  Template Repository: https://github.com/wuao1999/Notes
 markdown: kramdown
 math: mathjax
 kramdown:
