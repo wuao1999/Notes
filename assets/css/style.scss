@@ -1,0 +1,11 @@
+# 创建 assets/css/style.scss 文件
+---
+---
+
+@import "minima";
+
+.wrapper {
+  max-width: 900px;  # 修改最大宽度
+  padding-right: 30px;  # 修改右内边距
+  padding-left: 30px;   # 修改左内边距
+}
