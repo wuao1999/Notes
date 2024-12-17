@@ -1,40 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ page.title }}</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ page.title | default: site.title }}</title>
     
-    <!-- MathJax Configuration -->
-    <script>
-    MathJax = {
+    <!-- 添加 MathJax 支持 -->
+    <script type="text/javascript">
+      window.MathJax = {
         tex: {
-            inlineMath: [['$', '$']],
-            displayMath: [['$$', '$$']],
-            macros: {
-                part: '\\partial'
-            },
-            packages: {'[+]': ['ams']}
-        },
-        svg: {
-            fontCache: 'global'
+          inlineMath: [['$','$'], ['\\(','\\)']],
+          displayMath: [['$$','$$'], ['\\[','\\]']],
+          processEscapes: true
         }
-    };
+      };
     </script>
-    <script id="MathJax-script" async
-        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+    <script type="text/javascript" id="MathJax-script" async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
     </script>
-
-    <style>
-        body {
-            margin: 40px auto;
-            max-width: 850px;
-            line-height: 1.6;
-            padding: 0 10px;
-        }
-    </style>    
-</head>
-<body>
+  </head>
+  <body>
     {{ content }}
-</body>
+  </body>
 </html>
