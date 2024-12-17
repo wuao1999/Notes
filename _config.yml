@@ -1,5 +1,6 @@
 title: Your Site Title
 description: Your site description
+theme: minima
 markdown: kramdown
 kramdown:
   math_engine: mathjax
