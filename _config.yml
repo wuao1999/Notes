@@ -1,6 +1,8 @@
+remote_theme: just-the-docs/just-the-docs
+plugins:
+  - jekyll-remote-theme
 title: Welcome to my notes
 markdown: kramdown
-theme: just-the-docs
 math: mathjax
 kramdown:
   math_engine: mathjax
