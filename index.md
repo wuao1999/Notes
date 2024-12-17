@@ -2,4 +2,4 @@
 This is my GitHub Pages site.
 
 ## Contents
-- [E-L equation&Nother theorem](E-L_equation&Nother_theorem.md)
+- [E-L equation&Nother theorem](E-L equation&Nother_theorem.md)
