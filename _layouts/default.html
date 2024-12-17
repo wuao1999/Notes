@@ -12,7 +12,7 @@
             inlineMath: [['$', '$']],
             displayMath: [['$$', '$$']],
             macros: {
-                part: ['\\partial', 0]
+                part: '\\partial'
             },
             packages: {'[+]': ['ams']}
         },
@@ -24,6 +24,15 @@
     <script id="MathJax-script" async
         src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
     </script>
+
+    <style>
+        body {
+            margin: 40px auto;
+            max-width: 850px;
+            line-height: 1.6;
+            padding: 0 10px;
+        }
+    </style>    
 </head>
 <body>
     {{ content }}
