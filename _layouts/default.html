@@ -1,25 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>{{ page.title | default: site.title }}</title>
-    <script type="text/x-mathjax-config">
-        MathJax.Hub.Config({
-            tex2jax: {
-                inlineMath: [['$','$']],
-                displayMath: [['$$','$$']],
-                processEscapes: true
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }}</title>
+    
+    <!-- MathJax Configuration -->
+    <script>
+    MathJax = {
+        tex: {
+            inlineMath: [['$', '$']],
+            displayMath: [['$$', '$$']],
+            macros: {
+                part: ['\\frac{\\partial #1}{\\partial #2}', 2],  // 定义带两个参数的 \part 命令
+                partd: ['\\frac{\\partial}{\\partial #1}', 1]     // 定义带一个参数的 \partd 命令
             },
-            TeX: {
-                extensions: ["AMSmath.js", "AMSsymbols.js"],
-                Macros: {
-                    part: ["\\partial_{#1}", 1]  // 这里定义 \part 宏
-                }
-            }
-        });
+            packages: {'[+]': ['ams']}
+        },
+        svg: {
+            fontCache: 'global'
+        }
+    };
     </script>
-    <script type="text/javascript" async
-        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    <script id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
     </script>
 </head>
 <body>
