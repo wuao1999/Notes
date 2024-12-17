@@ -1,6 +1,4 @@
-title: Your Site Title
-description: Your site description
-theme: minima
+title: Welcome to my notes
 markdown: kramdown
 kramdown:
   math_engine: mathjax
