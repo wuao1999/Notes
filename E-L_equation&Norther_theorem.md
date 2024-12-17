@@ -111,8 +111,8 @@ So $\int d^3xj^0$ is the conservation charge, $j^0$ is the charge density, and $
 
 Now we come into conclusion to the so-called ==Norther theorem==, which claims that, any invariant continue transform to the action (symmetric transformation) correspond to a conservation quantity. Here we list some of them:
 
-Space-time translation symmetry -> Energy & momentum conservation
+<center>Space-time translation symmetry -> Energy & momentum conservation</center>
 
-Rotational symmetry -> Angular momentum conservation
+<center>Rotational symmetry -> Angular momentum conservation</center>
 
-U(1) gauge symmetry -> Electric charge conservation
+<center>U(1) gauge symmetry -> Electric charge conservation</center>
