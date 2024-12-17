@@ -1,5 +1,6 @@
 title: Welcome to my notes
 markdown: kramdown
-theme: minimal
+theme: just-the-docs
+math: mathjax
 kramdown:
   math_engine: mathjax
