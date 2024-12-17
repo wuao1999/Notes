@@ -12,8 +12,7 @@
             inlineMath: [['$', '$']],
             displayMath: [['$$', '$$']],
             macros: {
-                part: ['\\frac{\\partial #1}{\\partial #2}', 2],  // 定义带两个参数的 \part 命令
-                partd: ['\\frac{\\partial}{\\partial #1}', 1]     // 定义带一个参数的 \partd 命令
+                part: ['\\partial', 0]
             },
             packages: {'[+]': ['ams']}
         },
