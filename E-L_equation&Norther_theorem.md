@@ -39,10 +39,18 @@ We assume the field quantity changes at the same time that coordinates are chang
 $$
 \phi(x)\rightarrow\phi'(x')+\delta \phi(x)
 $$
-Please note that, the variation contains two part: (1) the variation of the field $\phi\rightarrow\phi'=\phi+\bar\delta \phi$ (we assume it is the same before/after the change of coordinates as is a infinitesimal transformation, for distinction we use a bar), and (2) the variation of the coordinates $x\rightarrow x'=x+\delta x$. So the field quantity has been changed, due to certain evolution of the field, while the perspective of view is also changed, such as the observer is rotated by a degree, or in a different inertial frame. The Lagrangian depends on the coordinates similarly,
+Please note that, the variation contains two part: 
+
+##### (1) the variation of the field $\phi\rightarrow\phi'=\phi+\bar\delta \phi$ (we assume it is the same before/after the change of coordinates as is a infinitesimal transformation, for distinction we use a bar), 
+
+and 
+
+##### (2) the variation of the coordinates $x\rightarrow x'=x+\delta x$. So the field quantity has been changed, due to certain evolution of the field, while the perspective of view is also changed, such as the observer is rotated by a degree, or in a different inertial frame. The Lagrangian depends on the coordinates similarly,
+
 $$
 \delta L(x)=L'(x')-L(x)=[L'(x')-L(x')]-[L(x')-L(x)]=\bar\delta L+\part_\mu L\delta x^\mu
 $$
+
 and
 $$
 \bar\delta L=L'(x)-L(x)=\frac{\part L}{\part \phi}\bar\delta\phi+\frac{\part L}{\part\part_\mu\phi}\bar\delta\part_\mu\phi
@@ -69,7 +77,7 @@ $$
 $$
 Now we consider:
 
-##### (1) The coordinate is not changed:
+##### (1) In fixed frame how the field evolves:
 
 In this case, $\delta x^\mu=0$, the first term becomes:
 $$
@@ -81,9 +89,30 @@ $$
 $$
 This is literally the ==Euler-Lagrangian equation==, which governs how the field evolves through time.
 
-##### (2)The field is not changed:
+##### (2) Changes of frame will not affect the action:
 
-Now the variation of the field quantity with respect to certain coordinates is zero. 
+Now the field is indeed a solution to E-L equation, this left us with the first term equals to zero. We must assure the transformed field is also a solution to E-L equation, this indicates a continue transform under which the action is invariant, and the equation of motion has the same form. This indicates:
+$$
+\part_\mu(L\delta x^\mu+\frac{\part L}{\part\part_\mu\phi}\bar\delta\phi)=0
+$$
+We let
+$$
+j^\mu=L\delta x^\mu+\frac{\part L}{\part\part_\mu\phi}\bar\delta\phi
+$$
+Then we have
+$$
+\part_\mu j^\mu=0
+$$
+which is the ==continuity equation==. $j^\mu$ here correspond to a conservation 4-current (and of course one example is the electric current). To clarify the physical meaning, we integral in a region:
+$$
+0=\int d^3x\part_\mu j^\mu=\frac{\part}{\part t}\int d^3xj^0+\int d^3x\nabla\cdot\vec{j}=\frac{\part}{\part t}\int d^3xj^0+\oint_S d\vec{\sigma}\cdot\vec{j}
+$$
+So $\int d^3xj^0$ is the conservation charge, $j^0$ is the charge density, and $\vec{j}$ is the conservation current.
 
+Now we come into conclusion to the so-called ==Norther theorem==, which claims that, any invariant continue transform to the action (symmetric transformation) correspond to a conservation quantity. Here we list some of them:
 
+Space-time translation symmetry -> Energy & momentum conservation
 
+Rotational symmetry -> Angular momentum conservation
+
+U(1) gauge symmetry -> Electric charge conservation
