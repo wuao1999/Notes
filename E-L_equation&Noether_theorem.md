@@ -1,4 +1,4 @@
-### Norther theorem & Euler-Lagrangian equation
+### Noether's theorem & Euler-Lagrangian equation
 
 #### 1. Variation of the volume element under infinitesimal transformation
 
@@ -141,7 +141,7 @@ $$
 
 So $\int d^3xj^0$ is the conservation charge, $j^0$ is the charge density, and $\vec{j}$ is the conservation current.
 
-Now we come into conclusion to the so-called ==Norther theorem==, which claims that, any invariant continue transform to the action (symmetric transformation) correspond to a conservation quantity. Here we list some of them:
+Now we come into conclusion to the so-called ==Noether's theorem==, which claims that, any invariant continue transform to the action (symmetric transformation) correspond to a conservation quantity. Here we list some of them:
 
 <center>Space-time translation symmetry -> Energy & momentum conservation</center>
 
