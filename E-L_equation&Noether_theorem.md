@@ -124,11 +124,20 @@ $$
 We let
 
 $$
-j^\mu=L\delta x^\mu+\frac{\partial L}{\partial\partial_\mu\phi}\bar\delta\phi
+j^\mu=L\delta x^\mu+\frac{\partial L}{\partial\partial_\mu\phi}\bar\delta\phi$$
 $$
 
-Then we have
+The variation of Lagrangian containing coordinates change equals to zero:
+$$
+\delta\phi=\phi'(x')-\phi(x)=[\phi'(x')-\phi(x')]+[\phi(x')-\phi(x)]=\bar\delta\phi+\partial_\nu\phi\delta x^\nu=0
+$$
+The new field quantity at new coordinate should equals to the old field quantity at old corrdinate, otherwise there is an unique frame that we can tells apart from the transformation. Therefore, we can write the conservation current contributed purely from coordinates change:
+$$
+j^\mu=L\delta x^\mu+\frac{\partial L}{\partial\partial_\mu\phi}\bar\delta\phi=j^\mu=L\delta x^\mu-\frac{\partial L}{\partial\partial_\mu\phi}\partial_\nu\phi\delta x^\nu=(Lg^\mu_{~~\nu}-\frac{\partial L}{\partial\partial_\mu\phi}\partial_\nu\phi)\delta x^\nu
+$$
 
+
+And we have
 $$
 \partial_\mu j^\mu=0
 $$
