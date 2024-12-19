@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ page.title }}</title>
     
-    <!-- MathJax 配置 -->
     <script>
         MathJax = {
             tex: {
                 inlineMath: [['$', '$']],
-                displayMath: [['$$', '$$'], ['\\[', '\\]'], ['\\(', '\\)']]
+                displayMath: [['$$', '$$'], ['\\[', '\\]'], ['\\(', '\\)']],
+                macros: {
+                    '\\': '\\newline'
+                }
             }
         };
     </script>
