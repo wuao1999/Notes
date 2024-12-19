@@ -11,7 +11,7 @@
                 inlineMath: [['$', '$']],
                 displayMath: [['$$', '$$'], ['\\[', '\\]'], ['\\(', '\\)']],
                 macros: {
-                    '\\': '\\newline'
+                    '\\': '\\\\'
                 }
             }
         };
@@ -19,6 +19,14 @@
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 <body>
-    {{ content }}
+    <article class="post">
+        <header class="post-header">
+            <h1 class="post-title">{{ page.title }}</h1>
+        </header>
+
+        <div class="post-content">
+            {{ content }}
+        </div>
+    </article>
 </body>
 </html>
